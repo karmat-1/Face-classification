@@ -51,8 +51,6 @@ with mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence
                         race = info.get("dominant_race", "N/A")
                         emotion = info.get("dominant_emotion", "N/A")
 
-                        # Celebrity look-alike (requires DeepFace.find with db)
-                        # Here we just simulate, unless you build a celeb DB
                         celeb_label = "Celebrity-LookAlike: N/A"
 
                         # Display beside bounding box
@@ -93,3 +91,4 @@ with mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence
 
 cap.release()
 cv2.destroyAllWindows()
+
